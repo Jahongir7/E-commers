@@ -1,17 +1,14 @@
 import "./App.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import React from "react";
-import useScrollYOffset from "./Components/scroll";
-
+import AllComponents from "./AllComponents";
+import Routes from "./Router/Route";
 function App() {
-  const yOffset = useScrollYOffset();
-  const navClass = yOffset > 100 ? "navbar scrolled" : "navbar";
   return (
-    <div className="container">
-      <nav className={navClass}>
-        <div>Logo</div>
-        <div>Login</div>
-      </nav>
-    </div>
+    <Router>
+      <Route exact path="/" component={AllComponents} />
+      <Route component={Routes} />
+    </Router>
   );
 }
 

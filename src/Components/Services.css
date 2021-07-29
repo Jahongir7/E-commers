@@ -36,89 +36,56 @@
   --max-width: 1170px;
   --fixed-width: 620px;
 }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans", sans-serif;
+h1 {
+  text-align: center;
+  margin-top: 150px;
 }
-.leadText {
-  width: 60%;
-  margin: 160px 20px;
-  position: relative;
-  color: var(--clr-primary-5);
-}
-.leadText h1 {
-  text-align: left;
-}
-.leadText p {
-  --clr-grey-7: hsl(211, 27%, 70%);
-}
-.leadBackground {
-  background-image: linear-gradient(
-      -145deg,
-      rgb(194, 10, 47) 25%,
-      var(--clr-grey-10) 15%
-    ),
-    linear-gradient(258deg, rgba(87, 238, 255, 0.1), rgba(77, 108, 211, 0.2));
-  /* background: var(--clr-grey-10); */
-  margin: 10px auto;
-  width: 80%;
-  border: 1px solid var(--clr-grey-10);
-  border-radius: 20px;
-  height: 80vh;
-  box-shadow: 1px 2px 17px grey;
-  box-sizing: border-box;
-}
-.pastga {
+.services {
+  margin: 20px auto;
+  width: 90%;
+  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: fade-slide-up 1s 1s ease-out forwards,
-    pulse 2s 3s ease-out infinite;
-  opacity: 0;
+  box-sizing: border-box;
 }
-.pastga i {
-  font-size: 48px;
-  color: hsl(211, 27%, 70%);
+.services_box {
+  width: 25%;
+  border: 1px solid grey;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 20px;
+  background: crimson;
+  color: #fff;
 }
-@keyframes pulse {
-  0% {
-    opacity: 1;
-    transform: none;
-  }
-  50% {
-    opacity: 0.8;
-    transform: scale(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
+.services_box img {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease-in-out;
 }
-.navbar-logo {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+.img_box {
+  overflow: hidden;
+}
+.services_box img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.services_box p {
+  padding: 10px;
+  color: #fff;
+  font-family: cursive;
 }
 
 @media (max-width: 550px) {
-  .leadText {
-    margin: 100px 20px;
-  }
   .services_box {
-    width: 90%;
+    width: 70%;
+    margin: 20px auto;
   }
-  .leadText h1 {
-    font-size: x-large;
+  .services {
+    width: 100%;
+    display: grid;
   }
 }
-.a {
-  padding: 10px;
-}
-.table {
-  margin: 100px auto;
-}
-.table_btn button {
+.services_box button {
   padding: 10px 30px;
   color: white;
   background-color: crimson;
@@ -127,8 +94,11 @@
   margin: 10px;
   cursor: pointer;
 }
-.table_btn button:hover {
+.services_box button:hover {
   border: 1px solid white;
   background-color: white;
+  color: crimson;
+}
+.bclr {
   color: crimson;
 }
