@@ -11,7 +11,7 @@ function Lead() {
             olishga majbur qilishga qaratilgan. Barcha matnli ma'lumotlar va
             grafik tarkib to'g'ridan-to'g'ri yoki bilvosita sotish maqsadiga
             xizmat qiladi va buning uchun portal sahifalari
-            "keskinlashtirilishi" kerak
+            "keskinlashtirilishi" kerak.
           </p>
         </div>
         <div className="pastga">
