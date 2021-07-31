@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import Cost1 from "../components/Cost1";
-import Cost from "../components/Costs";
+import Cost1 from "../Components/Cost1";
+import Cost from "../Components/Costs";
 
 const Routes = (props) => {
   return (

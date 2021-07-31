@@ -1,9 +1,9 @@
-import Lead from "./components/Lead";
-import Services from "./components/services";
-import Auth from "./components/Auth";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import Carusel from "./components/Carusel";
+import Lead from "./Components/Lead";
+import Services from "./Components/services";
+import Auth from "./Components/Auth";
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar";
+import Carusel from "./Components/Carusel";
 
 const AllComponents = () => {
   return (
@@ -17,6 +17,5 @@ const AllComponents = () => {
     </div>
   );
 };
-
 
 export default AllComponents;
