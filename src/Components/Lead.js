@@ -1,5 +1,4 @@
 import React from "react";
-import writeText from "./Autotext";
 
 function Lead() {
   return (
@@ -7,7 +6,7 @@ function Lead() {
       <div className="leadBackground" id="lead">
         <div className="leadText">
           <h1 className="leadh1" id="text">
-            {writeText}
+            ShowHouse Uz
           </h1>
           <p>
             Reklama sayti bitta harakatga - mijozga mahsulot yoki xizmatni sotib
