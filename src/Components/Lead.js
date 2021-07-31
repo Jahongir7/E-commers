@@ -1,11 +1,14 @@
 import React from "react";
+import writeText from "./Autotext";
 
 function Lead() {
   return (
     <>
       <div className="leadBackground" id="lead">
         <div className="leadText">
-          <h1 className="leadh1">ShowHouse Uz</h1>
+          <h1 className="leadh1" id="text">
+            {writeText}
+          </h1>
           <p>
             Reklama sayti bitta harakatga - mijozga mahsulot yoki xizmatni sotib
             olishga majbur qilishga qaratilgan. Barcha matnli ma'lumotlar va
