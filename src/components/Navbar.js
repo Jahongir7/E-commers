@@ -1,6 +1,6 @@
 import { AppBar, Button, Grid, Toolbar } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
-import { CHAT_ROUTE, LOGIN_ROUTE } from "../utils/const";
+import { LOGIN_ROUTE } from "../utils/const";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useContext } from "react";
 import { Context } from "..";

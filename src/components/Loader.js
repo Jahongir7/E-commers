@@ -1,3 +1,5 @@
+import { Container, Grid } from "@material-ui/core";
+
 function Loader() {
   return (
     <Container>
@@ -7,17 +9,12 @@ function Loader() {
         justifyContent={"center"}
         style={{ height: window.innerHeight - 50 }}
       >
-        <Grid
-          style={{ width: 400, background: "lightgrey" }}
-          container
-          alignItems={"center"}
-          justifyContent={"center"}
-        >
-          <Box p={5}>
-            <Button onClick={login} variant={"outlined"}>
-              GOOGLE ORQALI KIRISH
-            </Button>
-          </Box>
+        <Grid container alignItems={"center"} justifyContent={"center"}>
+          <div className="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </Grid>
       </Grid>
     </Container>
