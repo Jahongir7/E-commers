@@ -7,8 +7,8 @@ function Navbar() {
   return (
     <div>
       <AppBar position="static">
-        <Toolbar>
-          <Grid container justify={"flex-end"}>
+        <Toolbar variant="dense">
+          <Grid container justifyContent={"flex-end"}>
             {user ? (
               <Button color="Secondary" variant={"contained"}>
                 Quit
