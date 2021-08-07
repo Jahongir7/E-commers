@@ -69,9 +69,13 @@ function Chat() {
                 }}
               >
                 <Avatar src={message.photoURL} />
-                <div>{message.displayName}</div>
+                <div>
+                  <em>{message.displayName}</em>
+                </div>
               </Grid>
-              <div>{message.text}</div>
+              <div>
+                <b>{message.text}</b>
+              </div>
             </div>
           ))}
         </div>
