@@ -15,7 +15,7 @@ function Navbar() {
           <Grid container justifyContent={"flex-end"}>
             {user ? (
               <Button
-                color="Secondary"
+                color="secondary"
                 variant={"contained"}
                 onClick={() => auth.signOut()}
               >
