@@ -13,6 +13,7 @@ function Chat() {
   const [messages, loading] = useCollectionData(
     firestore.collection("messages").orderBy("createdAt")
   );
+
   const sendMessage = async () => {
     firestore.collection("messages").add({
       uid: user.uid,

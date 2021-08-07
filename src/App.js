@@ -10,6 +10,7 @@ import Loader from "./components/Loader";
 
 function App() {
   const { auth } = useContext(Context);
+  // eslint-disable-next-line no-unused-vars
   const [user, loading, error] = useAuthState(auth);
   if (loading) {
     return <Loader />;
