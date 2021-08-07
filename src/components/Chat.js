@@ -7,6 +7,7 @@ import Loader from "./Loader";
 import firebase from "firebase/app";
 
 function Chat() {
+  // const forKey = new Date().getTime().toString();
   const { auth, firestore } = useContext(Context);
   const [user] = useAuthState(auth);
   const [value, setValue] = useState("");
@@ -47,8 +48,9 @@ function Chat() {
             backgroundColor: "rgb(192, 216, 223)",
           }}
         >
-          {messages.map((message) => (
+          {messages.map((message, id) => (
             <div
+              key={id}
               style={{
                 margin: 10,
                 backgroundColor:
